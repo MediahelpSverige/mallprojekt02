@@ -31,11 +31,13 @@ switch ($hostname) {
     case 'localhost':
     	define('WP_ENV', 'development2');
     	break;
-    case '':
+    case 'mallprojekt02.mediahelpcrm.se':
         define('WP_ENV', 'staging');
         break;
 
-    case '':
+    case 'www.mallprojekt02.mediahelpcrm.se':
+        define('WP_ENV', 'staging');
+        break;
     default: 
-        define('WP_ENV', 'production');
+        define('WP_ENV', 'staging');
 }
